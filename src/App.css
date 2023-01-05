@@ -1,0 +1,336 @@
+.App {
+  font-size: 14px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* fore header styles starts here */
+.fore-header .alert-success{
+  background: #cef2da;
+    color: #0c611a;
+    font-weight: 600;
+}
+/* fore header styles ends here */
+.profile{
+  min-height: 100px;
+  background-color: #f5f6f8;
+}
+.bank-acct{
+  background-color: #f5f6f8;
+}
+.billing-addr{
+  background-color: #f5f6f8;
+}
+.billing-addr .form-label, .billing-addr .form-check-label{
+  font-size: 12px;
+}
+.billing-addr .form-check-input:checked {
+  background-color: #f8991f;
+  border-color: #f8991f;
+}
+.activities{
+  background-color: #f5f6f8;
+}
+.activities-block .activity{
+  font-size: 12px;
+}
+.activities-block .time{
+  font-size:10px;
+}
+.family-block{
+  background-color: #f5f6f8;
+  min-height: 250px;
+}
+.invite-block{
+  background-color: #f5f6f8;
+  min-height: 250px;
+}
+.activities{
+  background-color: #f5f6f8;
+}
+.text-gray{
+  color: rgb(157,169,187);
+}
+.txt-light-navy{
+  color: #232e3e;
+}
+.txt-orange{
+  color: #f8991f;
+}
+.symbol-circle{
+  position: relative;
+  top: -10px;
+}
+.symbol-label{
+  width: 30px;
+  height: 30px;
+  background: #dee8ff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 4px;
+}
+
+/* Profie styles starts here */
+.upload-icon{
+  width: 25px;
+    height: 25px;
+    border: 1px solid #6c757d;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 50%;
+    position: absolute;
+    background: #FFF;
+    right: -16px;
+    bottom: -9px;
+}
+.user-title{
+  margin: 20px 0px 0px 0px;
+}
+.location{
+  font-size:10px;
+}
+.upload-icon .fa-camera{
+  color: #6c757d;
+    font-size: 12px;
+}
+.fieldset-one .form-control, .fieldset-two .form-control{
+  margin-bottom: 5px;
+  /* width: 80%; */
+}
+.fieldset-one .col-form-label, .fieldset-two .col-form-label{
+  font-size: 9px;
+    padding: 0px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.btn-block .btn{
+  width: 110px;
+    font-size: 10px;
+    height: 31px;
+    margin-bottom: 5px;
+}
+/* Profie styles ends here */
+
+/* Family styles starts here */
+.family-block .fa-search{
+  font-size: 20px;
+    margin: 5px 10px;
+}
+.family-member-wrapper{
+  max-height: 270px;
+  overflow-y: auto;
+  margin: 10px 0px 10px 0px;
+}
+.family-member-item{
+  background: #dee8ff;
+  display: block;
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+}
+.family-member-item.active{
+  color: #FFF;
+  background: #f8991f;
+}
+.family-member-item .btn{
+  background-color: #cad7f5;
+  color: #202020;
+  border-color: #cad7f5;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 11px;
+  width: 80px;
+}
+.family-member-item.active .btn{
+  background-color: #FFF;
+  color: #000;
+  border-color: #FFF;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 11px;
+  width: 80px;
+}
+.family-member-item.active .user-btn{
+  width: 30px;
+}
+.lh-25{
+  line-height: 25px;
+}
+/* Family styles ends here */
+
+/* invite-block styles starts here */
+.invite-block .invite-block-header .btn{
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+.invite-block .receive-btn{
+  color: #FFF;
+  background: #f8991f;
+  border-color: #f8991f ;
+}
+.invite-block .sent-btn{
+  color: #000;
+  background: #dbdbdb;
+  border-color: #dbdbdb;
+  margin-right: -25px;
+}
+.invite-block .fa-caret-down{
+  position: absolute;
+    bottom: -16px;
+    right: 45px;
+    font-size: 25px;
+    color: #f8991f;
+}
+.invite-wrapper{
+  max-height: 200px;
+  overflow-y: auto;
+}
+.invite-item{
+  background: #dee8ff;
+  display: block;
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+}
+.invite-item .invite-text{
+  font-size: 11px;
+    width: 54%;
+    line-height: 18px;
+}
+.invite-item .btn{
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 11px;
+  width: 30px;
+}
+/* invite-block styles ends here */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  border-radius: 10px;
+  border: 1px solid #F5F5F5;
+  width: 6px;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+  background-color:#F5F5F5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+  border-radius: 100px;
+  height: 6px;
+}
+
+/* Responsive styles starts here */
+
+ /* Extra Small devices */
+@media (max-width: 576px) {
+  /* Foreheader styles starts here */
+  .container-fluid.px-5{
+    padding: 0px !important;
+  }
+  .fore-header h5{
+    text-align: center;
+  }
+  .fore-header .view-btn{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .fore-header .view-btn .btn-dark{
+    float: initial !important;
+  }
+  /* Foreheader styles ends here */
+
+  /* Profile styles starts here */
+  .profile .btn-block .btn {
+    display: block !important;
+    float: initial !important;
+    margin: 0px auto;
+    margin-top: 10px;
+  }
+  .fieldset-wrapper{
+    padding: 0px 12px !important;
+  }
+  .fieldset-one, .fieldset-two{
+    padding: 0px 12px !important;
+  }
+  .fieldset-one .col-form-label, .fieldset-two .col-form-label {
+    font-size: 12px;
+  }
+  /* Profile styles ends here */
+
+  /* Billing address styles starts here */
+  .billing-addr-wrapper{
+    padding: 0px 15px !important;
+  }
+  .billing-addr-wrapper .billing-addr .btn-dark{
+    margin-top: 10px !important;
+  }
+  /* Billing address styles ends here */
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+ }
+/* Responsive styles ends here */
